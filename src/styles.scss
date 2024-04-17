@@ -1,0 +1,26 @@
+@use './components/Navbar/Navbar';
+
+:root {
+    $primary-color:#99a98f;
+    $light-greay:#d6e8db;
+    $white:#fff;
+    $second-color:rgb(9,189,9);
+    $ff: "Poppins", sans-serif;
+    $text-color:grey;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+body {
+    padding: 0.2%;
+}
+

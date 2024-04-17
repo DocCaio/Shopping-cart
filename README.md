@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+## npm install -g sass
+## npm install sass-loader sass webpack --save-dev
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
