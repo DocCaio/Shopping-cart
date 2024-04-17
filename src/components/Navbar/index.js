@@ -1,4 +1,6 @@
 import './_Navbar.scss';
+
+
 export default function Navbar() { 
     return (
         <header className='header'>
@@ -12,15 +14,15 @@ export default function Navbar() {
                     <input type="text" placeholder='Search'/>
                  </div>
 
-                  <div className='menu__icon'>
-                      <i class="bi bi-egg"></i>
-                    </div>
+                  <div className='menu__icons'>
+                      <i class="bi bi-egg"></i>                    
 
                     <div className='cart__icon'>
                       <i class="bi bi-cart2"></i>
                       <span>0</span>
                     </div>
 
+                  </div>
 
             </nav>
         </header>
