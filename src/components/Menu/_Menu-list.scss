@@ -27,3 +27,30 @@
     width: 100%;
 
 }
+
+/*Cards*/
+
+.card__list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    background: #d6e8db;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    text-align: center;
+    color:grey ;
+}
+
+.card img {
+    width: 100%;
+}
