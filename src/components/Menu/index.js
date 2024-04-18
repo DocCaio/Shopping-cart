@@ -31,52 +31,47 @@ export default function Navbar() {
             </div>
            
 
-            <div className='menu__item'>
-            <img></img>
+            <div className='menu__item'>            
             <img src={Tablet}/>
             <h5>Tablet</h5>
             </div>
            
 
-            <div className='menu__item'>
-            <img></img>
+            <div className='menu__item'>            
             <img src={Tv}/>
             <h5>Tv</h5>
             </div>
            
 
-            <div className='menu__item'>
-            <img></img>
+            <div className='menu__item'>            
             <img src={Gamer}/>
             <h5>PC Gamer</h5>
             </div>
 
-            <div className='menu__item'>
-            <img></img>
+            <div className='menu__item'>          
             <img src={Chair}/>
             <h5>Chair</h5>
             </div>
 
-            <div className='menu__item'>
-            <img></img>
+            <div className='menu__item'>           
             <img src={Bar}/>
             <h5>Mini Bar</h5>
             </div>
 
-           <h2 className='section-heading'>Menu itens</h2>
+           <h2 className='section__heading'>Menu itens</h2>
            <div className='card-list'>
             <div className='card'>
             <img src={Headset} alt='gif'/>
             <h4 className='card__title'></h4>
 
             <div className='card__price'>
-
+               <div className='price'>R$10,00</div>
+               <i class="bi bi-plus-circle"></i>
             </div>
 
             </div>
 
-           </div>
-           
+           </div>           
            
 
         </div>

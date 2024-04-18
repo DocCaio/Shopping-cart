@@ -54,3 +54,29 @@
 .card img {
     width: 100%;
 }
+ 
+.cart__price {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cart__price .price {
+    color: #99a98f;
+    font-weight: 600;
+}
+
+.bi-plus-circle{
+    background: #99a98f;
+    color: #d6e8db;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bi-plus-circle:hover {   
+    color: #d6e8db;
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 , 236, 236) 0px 0px 0px 3px;
+    
+}
+

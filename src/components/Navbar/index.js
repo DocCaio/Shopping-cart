@@ -15,7 +15,7 @@ export default function Navbar() {
                  </div>
 
                   <div className='menu__icons'>
-                      <i class="bi bi-egg"></i>                    
+                  <i class="bi bi-pc-display"></i>                   
 
                     <div className='cart__icon'>
                       <i class="bi bi-cart2"></i>
