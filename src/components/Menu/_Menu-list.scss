@@ -1,0 +1,29 @@
+@use'/src/components/Styles.scss';
+
+.section__heading {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 1rem 0 10px 0;
+    color: grey;
+}
+
+.menu__list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    width: 114px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #d6e8db;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color: grey;
+}
+.menu__item img {
+    width: 100%;
+
+}
