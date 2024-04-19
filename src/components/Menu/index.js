@@ -57,6 +57,7 @@ export default function Navbar() {
             <img src={Bar}/>
             <h5>Mini Bar</h5>
             </div>
+
             </div>  
 
            <h2 className='section__heading'>Menu itens</h2>
@@ -72,7 +73,30 @@ export default function Navbar() {
 
             </div>
 
-                  
+            { /* Sidebar :) */ }
+            <div className='sidebar' id='sidebar'>
+               <div className='siderbar__close'>
+               <i class="bi bi-x"></i>
+               <div className='cart__menu'>
+                 <h3>My cart</h3>
+                 <div className='cart__term'>TEST 1</div>
+               </div>
+
+               <div className='siderbar__footer'>
+                  <div className='total__amount'>
+                     <h5>Total</h5>
+                     <div className='cart-total'>R$0.00</div>
+
+                  </div>
+                   <button className='chexkout-btn'>Checkout</button>
+
+               </div>
+
+
+
+               </div>
+
+            </div>
            
 
         </div>
