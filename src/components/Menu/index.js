@@ -57,6 +57,7 @@ export default function Navbar() {
             <img src={Bar}/>
             <h5>Mini Bar</h5>
             </div>
+            </div>  
 
            <h2 className='section__heading'>Menu itens</h2>
            <div className='card-list'>
@@ -66,12 +67,12 @@ export default function Navbar() {
 
             <div className='card__price'>
                <div className='price'>R$10,00</div>
-               <i class="bi bi-plus-circle"></i>
+               <i class="bi bi-plus-lg"></i>
             </div>
 
             </div>
 
-           </div>           
+                  
            
 
         </div>
