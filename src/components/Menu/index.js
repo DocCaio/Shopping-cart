@@ -74,6 +74,7 @@ export default function Navbar() {
             </div>
 
             { /* Sidebar :) */ }
+            
             <div className='sidebar' id='sidebar'>
                <div className='siderbar__close'>
                <i class="bi bi-x"></i>
