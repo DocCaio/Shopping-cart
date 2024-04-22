@@ -89,7 +89,7 @@ export default function Navbar() {
                      <div className='cart-total'>R$0.00</div>
 
                   </div>
-                   <button className='chexkout-btn'>Checkout</button>
+                   <button className='checkout-btn'>Checkout</button>
 
                </div>
 
