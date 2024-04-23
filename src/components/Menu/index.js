@@ -9,6 +9,55 @@ import Chair  from './assets/item-8.jpg';
 import Bar  from './assets/item-7.jpg'; 
 
 export default function Navbar() { 
+
+  document.addEventListener('DOMContentLoaded'), () => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItemCount = document.querySelectorAll('.cart__icon span');
+    const cartItemList = document.querySelectorAll('.cart__item');
+    const cartIcon = document.querySelectorAll('.cart__total');
+    const cartTotal = document.querySelectorAll('.cart__icon');
+    const sidebar = document.getElementById('sidebar');
+
+    let cartItems = [];
+    let totalAmout = 0;
+
+    addToCartButtons.forEach((button , index) => {
+      button.addEventListener('click', () => {
+         const item = {
+            name:document.querySelectorAll('.card .card__title')[index].textContent,
+            price: parseFloat(
+               document.querySelectorAll('.price')[index].textContent.slice(1),
+         ),
+            quantity: 1,
+         };
+
+      });
+
+      const existingItem = cartItems.find(
+         (cartItem) => cartItem.name === item.name,
+      );
+      if(existingItem) {
+         existingItem.quantity++;
+      }
+      else {
+         cartItems.push(item);
+      }
+
+      totalAmout += item.price;
+
+      updateCartUI();
+
+    });
+    
+    function updateCartUI() {
+      updateCartItemCout(cartItems.length);
+      updateCartList();
+      updateCartTotal();
+    }
+   
+   }
+   
+  
     return (
        <main>
         <h2 className='section__heading'>Tech menu</h2>
