@@ -48,11 +48,35 @@ export default function Navbar() {
       updateCartUI();
 
     });
-    
+
     function updateCartUI() {
       updateCartItemCout(cartItems.length);
       updateCartList();
       updateCartTotal();
+    }
+
+    function updateCartList() {
+      cartItemList.innetHTML = '';
+      cartItems.forEach((item, index) => {
+         const cartItem = document.createElement('div');
+         cartItem.classList.add('cart_item', 'imdividual-cart-item');
+         cartItem.innerHTML= `
+           <span>(${item.quantity}x)${item.name}</span>
+           <span  className="cart_item-price" >${(item.price * item.quantity).toFixed(2)}
+           <button className="remove-btn" data-index="${index}"<i class="bi bi-alarm"></i>></button>
+           </span>
+         `
+
+         cartItemList.append(cartItem);
+      });
+
+      const removeButtons = document.querySelectorAll('.remove-item');
+      removeButtons.forEach((button) => {
+         button.addEventListener('click', (event) => {
+            const index = event.target.dataset.index;
+            removeItemFromCart(index);
+         });
+      });
     }
    
    }
