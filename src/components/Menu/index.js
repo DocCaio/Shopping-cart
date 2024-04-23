@@ -10,7 +10,7 @@ import Bar  from './assets/item-7.jpg';
 
 export default function Navbar() { 
 
-  document.addEventListener('DOMContentLoaded'), () => {
+  document.addEventListener('DOMContentLoaded', () => {
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const cartItemCount = document.querySelectorAll('.cart__icon span');
     const cartItemList = document.querySelectorAll('.cart__item');
@@ -34,22 +34,22 @@ export default function Navbar() {
          const existingItem = cartItems.find(
             (cartItem) => cartItem.name === item.name,
          );
+         if(existingItem) {
+            existingItem.quantity++;
+         }
+         else {
+            cartItems.push(item);
+         }
+   
+         totalAmout += item.price;
+   
+         updateCartUI();
+   
+       });
 
-      });
-
+      
      
-      if(existingItem) {
-         existingItem.quantity++;
-      }
-      else {
-         cartItems.push(item);
-      }
-
-      totalAmout += item.price;
-
-      updateCartUI();
-
-    });
+     
 
     function updateCartUI() {
       updateCartItemCount (cartItems.length);
@@ -103,9 +103,13 @@ export default function Navbar() {
     closeButton.addEventListener('click' , (event) => {
       const index = event.target.dataset.index;
       removeItemFromCart(index);
-    })
+    });
+
+   });
+
    
-   }
+   
+   });
    
   
     return (
