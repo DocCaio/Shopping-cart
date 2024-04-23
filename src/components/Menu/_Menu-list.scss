@@ -115,7 +115,7 @@
 
  }
 
- .cart__tems {
+ .individual-cart-item{
     display: flex;
     justify-content: space-between;
     padding: 10px 5px;
@@ -156,4 +156,13 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
+ }
+
+ .remove-item {
+    background: #99a98f;
+    color: #d6e8db;
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+    margin-left: 5px;
  }

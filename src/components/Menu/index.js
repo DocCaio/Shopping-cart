@@ -31,11 +31,13 @@ export default function Navbar() {
             quantity: 1,
          };
 
+         const existingItem = cartItems.find(
+            (cartItem) => cartItem.name === item.name,
+         );
+
       });
 
-      const existingItem = cartItems.find(
-         (cartItem) => cartItem.name === item.name,
-      );
+     
       if(existingItem) {
          existingItem.quantity++;
       }
@@ -50,22 +52,26 @@ export default function Navbar() {
     });
 
     function updateCartUI() {
-      updateCartItemCout(cartItems.length);
+      updateCartItemCount (cartItems.length);
       updateCartList();
       updateCartTotal();
+    }
+
+    function updateCartItemCount(count) {
+      cartItemCount.textContent = count;
     }
 
     function updateCartList() {
       cartItemList.innetHTML = '';
       cartItems.forEach((item, index) => {
          const cartItem = document.createElement('div');
-         cartItem.classList.add('cart_item', 'imdividual-cart-item');
+         cartItem.classList.add('cart_item', 'individual-cart-item');
          cartItem.innerHTML= `
            <span>(${item.quantity}x)${item.name}</span>
-           <span  className="cart_item-price" >${(item.price * item.quantity).toFixed(2)}
+           <span  className="cart_item-price" >${(item.price * item.quantity).toFixed(2,)}
            <button className="remove-btn" data-index="${index}"<i class="bi bi-alarm"></i>></button>
            </span>
-         `
+         `;
 
          cartItemList.append(cartItem);
       });
@@ -78,6 +84,26 @@ export default function Navbar() {
          });
       });
     }
+
+    function removeItemFromCart(index) {
+      const removeItem = cartItems.splice(index,1)[0];
+      totalAmout -= removeItem.price * removeItem.quantity;
+      updateCartUI();
+    }
+
+    function updateCartTotal() {
+      cartTotal.textContent = `${totalAmout.toFixed(2)}`;
+    }
+
+    cartIcon.addEventListener('click', () => {
+      sidebar.classList.toggle("open");
+    });
+
+    const closeButton = document.querySelector('.siderbar__close');
+    closeButton.addEventListener('click' , (event) => {
+      const index = event.target.dataset.index;
+      removeItemFromCart(index);
+    })
    
    }
    
