@@ -165,37 +165,54 @@ export default function Navbar() {
 
            <h2 className='section__heading'>Menu itens</h2>
 
-           <div className='card-list'>
+           <div className='card_list'>
+
             <div className='card'>
             <img src={Headset} alt='headset'/>
             <h4 className='card__title'>Headset</h4>
-
             <div className='card__price'>
                <div className='price'>R$10,00</div>
                <i class="bi bi-plus-lg"></i>
             </div>
-
+            </div>
 
             <div className='card'>
-            <img src={Chair} alt='headset'/>
+            <img src={Chair} alt='chair'/>
+            <h4 className='card__title'>Chair</h4>
+
+            <div className='card__price'>
+               <div className='price'>R$100,00</div>
+               <i class="bi bi-plus-lg"></i>
+            </div>
+            </div>
+
+            <div className='card'>
+            <img src={Gamer} alt='Gamer'/>
             <h4 className='card__title'>Headset</h4>
 
             <div className='card__price'>
-               <div className='price'>R$10,00</div>
+               <div className='price'>R$300,00</div>
                <i class="bi bi-plus-lg"></i>
             </div>
-
-
             
-            
-
             </div>
 
+            <div className='card'>
+            <img src={Tv} alt='tv'/>
+            <h4 className='card__title'>Tv</h4>
 
-            
-            
-
+            <div className='card__price'>
+               <div className='price'>R$120,00</div>
+               <i class="bi bi-plus-lg"></i>
             </div>
+            
+            </div>  
+
+
+            
+            
+
+            
             </div>
 
             { /* Sidebar :) */ }
