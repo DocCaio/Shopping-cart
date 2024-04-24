@@ -172,7 +172,7 @@ export default function Navbar() {
             <h4 className='card__title'>Headset</h4>
             <div className='card__price'>
                <div className='price'>R$10,00</div>
-               <i class="bi bi-plus-lg"></i>
+               <i className="bi bi-plus-lg"></i>
             </div>
             </div>
 
@@ -182,7 +182,7 @@ export default function Navbar() {
 
             <div className='card__price'>
                <div className='price'>R$100,00</div>
-               <i class="bi bi-plus-lg"></i>
+               <i className="bi bi-plus-lg"></i>
             </div>
             </div>
 
@@ -192,7 +192,7 @@ export default function Navbar() {
 
             <div className='card__price'>
                <div className='price'>R$300,00</div>
-               <i class="bi bi-plus-lg"></i>
+               <i className="bi bi-plus-lg"></i>
             </div>
             
             </div>
@@ -203,7 +203,7 @@ export default function Navbar() {
 
             <div className='card__price'>
                <div className='price'>R$120,00</div>
-               <i class="bi bi-plus-lg"></i>
+               <i className="bi bi-plus-lg"></i>
             </div>
             
             </div>  
@@ -219,7 +219,7 @@ export default function Navbar() {
             
             <div className='sidebar' id='sidebar'>
                <div className='siderbar__close'>
-               <i class="bi bi-x"></i>
+               <i className="bi bi-x"></i>
                <div className='cart__menu'>
                  <h3>My cart</h3>
                  <div className='cart__term'>Cart</div>
