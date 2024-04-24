@@ -117,61 +117,85 @@ export default function Navbar() {
            
 
             <div className='menu__item'>          
-            <img src={Headset} alt='gif'/>
+            <img src={Headset} alt='headset'/>
             <h5>Fone</h5>
             </div>
 
             <div className='menu__item'>
-            <img src={Notebook}/>
+            <img src={Notebook} alt=''/>
             <h5>Notebook</h5>
             </div>
 
             <div className='menu__item'>
-            <img src={Phone}/>
+            <img src={Phone} alt='phone'/>
             <h5>Phone</h5>
             </div>
            
 
             <div className='menu__item'>            
-            <img src={Tablet}/>
+            <img src={Tablet} alt='tablet'/>
             <h5>Tablet</h5>
             </div>
            
 
             <div className='menu__item'>            
-            <img src={Tv}/>
+            <img src={Tv} alt='tv'/>
             <h5>Tv</h5>
             </div>
            
 
             <div className='menu__item'>            
-            <img src={Gamer}/>
+            <img src={Gamer} alt=''/>
             <h5>PC Gamer</h5>
             </div>
 
             <div className='menu__item'>          
-            <img src={Chair}/>
+            <img src={Chair} alt='chair'/>
             <h5>Chair</h5>
             </div>
 
             <div className='menu__item'>           
-            <img src={Bar}/>
+            <img src={Bar} alt='bar'/>
             <h5>Mini Bar</h5>
             </div>
 
             </div>  
 
+            
+
            <h2 className='section__heading'>Menu itens</h2>
+
            <div className='card-list'>
             <div className='card'>
-            <img src={Headset} alt='gif'/>
-            <h4 className='card__title'></h4>
+            <img src={Headset} alt='headset'/>
+            <h4 className='card__title'>Headset</h4>
 
             <div className='card__price'>
                <div className='price'>R$10,00</div>
                <i class="bi bi-plus-lg"></i>
             </div>
 
+
+            <div className='card'>
+            <img src={Chair} alt='headset'/>
+            <h4 className='card__title'>Headset</h4>
+
+            <div className='card__price'>
+               <div className='price'>R$10,00</div>
+               <i class="bi bi-plus-lg"></i>
+            </div>
+
+
+            
+            
+
+            </div>
+
+
+            
+            
+
+            </div>
             </div>
 
             { /* Sidebar :) */ }
@@ -197,7 +221,7 @@ export default function Navbar() {
 
                </div>
 
-            </div>
+           
            
 
         </div>
