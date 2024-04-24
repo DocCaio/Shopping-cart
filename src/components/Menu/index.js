@@ -105,9 +105,7 @@ export default function Navbar() {
       removeItemFromCart(index);
     });
 
-   });
-
-   
+   });   
    
    });
    
@@ -183,7 +181,7 @@ export default function Navbar() {
                <i class="bi bi-x"></i>
                <div className='cart__menu'>
                  <h3>My cart</h3>
-                 <div className='cart__term'>TEST 1</div>
+                 <div className='cart__term'>Cart</div>
                </div>
 
                <div className='siderbar__footer'>
