@@ -1,4 +1,5 @@
 import './_Navbar.scss';
+import CartButton from './cartButton';
 
 
 export default function Navbar() { 
@@ -17,10 +18,7 @@ export default function Navbar() {
                   <div className='menu__icons'>
                   <i class="bi bi-pc-display"></i>                   
 
-                    <div className='cart__icon'>
-                      <i class="bi bi-cart2"></i>
-                      <span>0</span>
-                    </div>
+                   <CartButton/>
 
                   </div>
 
