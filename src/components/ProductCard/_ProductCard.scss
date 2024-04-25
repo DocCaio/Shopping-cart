@@ -1,0 +1,16 @@
+@use'/src/components/Styles.scss';
+
+.product-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 0 auto;
+
+}
+
+.ard__image {
+  width: 100%;
+}
