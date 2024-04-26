@@ -1,15 +1,19 @@
 import React from "react";
 import './_ProductCard.scss';
+import prototypes from 'prop-types';
 
-function ProductCard() {
+function ProductCard( {data}) {
+
+  const {title, thumbnail , price} = data;
+
   return (
     <section className="product-card">
 
-      <img alt="product" className="card__image"/>
+      <img src={thumbnail} alt="product" className="card__image"/>
 
       <div className="card__infos">
-        <h2 className="card__price">R$ 20</h2>
-        <h2 className="card__title">Dev</h2>
+        <h2 className="card__price">{price}</h2>
+        <h2 className="card__title">{title}</h2>
         
       </div> 
          <button type="buton" className="button__add-card">
@@ -20,3 +24,7 @@ function ProductCard() {
 }
 
 export default ProductCard;
+
+ProductCard.prototypes = {
+  data: prototypes.shape({}),
+}.isRequired
