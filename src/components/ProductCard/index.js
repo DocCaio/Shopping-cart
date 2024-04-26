@@ -12,7 +12,9 @@ function ProductCard() {
         <h2 className="card__title">Dev</h2>
         
       </div> 
-         <button type="buton" className="button__add-card">+</button>
+         <button type="buton" className="button__add-card">
+         <i class="bi bi-cart2"></i>
+         </button>
     </section>
   )
 }
