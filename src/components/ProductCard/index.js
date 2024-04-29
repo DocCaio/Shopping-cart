@@ -1,6 +1,7 @@
 import React from "react";
 import './_ProductCard.scss';
 import prototypes from 'prop-types';
+import formatCurrency from "../../utils/formatCurrency";
 
 function ProductCard( {data}) {
 
@@ -9,10 +10,15 @@ function ProductCard( {data}) {
   return (
     <section className="product-card">
 
-      <img src={thumbnail} alt="product" className="card__image"/>
+     <img 
+    src={thumbnail.replace(/\.\w+$/gi, 'W.jpg')} 
+    alt="product" 
+    className="card__image"
+/>
+
 
       <div className="card__infos">
-        <h2 className="card__price">{price}</h2>
+        <h2 className="card__price">{formatCurrency(price, 'BRL')}</h2>
         <h2 className="card__title">{title}</h2>
         
       </div> 
