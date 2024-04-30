@@ -8,7 +8,9 @@ import Gamer  from './assets/item-6.jpg';
 import Chair  from './assets/item-8.jpg'; 
 import Bar  from './assets/item-7.jpg'; 
 
-export default function Navbar() {    
+
+export default function Navbar() {   
+
   
     return (
        <main>
