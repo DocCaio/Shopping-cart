@@ -1,4 +1,4 @@
-# Shop*cart
+# Shopping-cart
 
 ## Techs
 
@@ -16,7 +16,7 @@
 ### Print
   <img src="#" alt="Minha Figura">
 
-### npm run dev
+## Sass
 ### npm install -g sass
 
 ## npm install sass-loader sass webpack --save-dev
