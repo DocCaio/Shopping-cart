@@ -11,7 +11,7 @@ function ProductCard( {data}) {
     <section className="product-card">
 
      <img 
-    src={thumbnail.replace(/\.\w+$/gi, 'W.jpg')} 
+    src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')} 
     alt="product" 
     className="card__image"
 />
