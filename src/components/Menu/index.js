@@ -123,7 +123,7 @@ export default function Navbar() {
             
             <div className='sidebar' id='sidebar'>
                <div className='siderbar__close'>
-               <i className="bi bi-x"></i>
+               <i className="bi bi-x"></i>               
                <div className='cart__menu'>
                  <h3>My cart</h3>
                  <div className='cart__term'>Cart</div>

@@ -4,6 +4,7 @@ import Cover from './components/Cover';
 import Menu from './components/Menu';
 import Products from './components/Products';
 import Provider from './context/Provider';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return  (
@@ -13,9 +14,10 @@ function App() {
     <Cover/>    
     <Menu/>
     <Products/>
+    <Cart/>
 
   </Provider>
-  )
+  );
 }
 
 export default App;
