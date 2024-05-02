@@ -1,16 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect} from "react";
 
 import './_Products.scss';
 import fetchProducts from "../../api/fetchProducts";
 import ProductCard from "../ProductCard";
-import Loading from "../Loading";
+import Loading from "../Loading/index";
+import AppContext from "../../context/AppContext";
 
 
 
 function Products() {
 
-  const [products ,setProdutcs] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const {products , setProdutcs , loading , setLoading} = useContext(AppContext);
+ 
 
   useEffect(() => {
       fetchProducts('iphone').then((response) => {
