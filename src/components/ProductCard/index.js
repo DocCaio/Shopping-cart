@@ -33,10 +33,8 @@ function ProductCard( {data}) {
          type="buton" c
          className="button__add-card"
          onClick={handleAddCart}
-
-
          >
-         <i class="bi bi-cart2"></i>
+         <i class="bi bi-cart-plus-fill"></i>
          </button>
     </section>
   )
