@@ -1,13 +1,21 @@
 import './_Cart.scss';
-import React from 'react';
-import CartItens from '../CartItems/CartItems'
+import React, { useContext } from 'react';
+import CartItem from '../CartItem/CartItem';
+import AppContext from '../../context/AppContext';
+import formatCurrency from '../../utils/formatCurrency';
 
 function Cart() {
+
+  const {cartItems} = useContext(AppContext);
+
+  const totalPrice = cartItems.reduce((acc ,item) => item.price + acc, 0);
   return (
     <section className='cart'>
-      <div className='cart-itens'>Itens</div>
-      <div className='cart-resume'>Suas compras</div>
-      <CartItens data={{thumbnail: '' , title:'', price:'123'}}/>
+      <div className='cart-items'>
+     {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}
+        
+        </div>
+      <div className='cart-resume'>{formatCurrency(totalPrice , 'BRL')}</div>      
     </section>
 
   );

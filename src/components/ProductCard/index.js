@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React , { useContext } from "react";
 import './_ProductCard.scss';
 import prototypes from 'prop-types';
 import formatCurrency from "../../utils/formatCurrency";
@@ -8,11 +8,17 @@ function ProductCard( {data}) {
 
   const {title, thumbnail , price} = data;
 
-  const {setCartItems} = useContext(AppContext);
+  const { cartItems ,setCartItems} = useContext(AppContext);
 
-  const handleAddCart = () => {
+  const handleAddCart = () => setCartItems([...cartItems , data]);
 
-  };
+    //const updatedCartItems = cartItems;
+
+    //updatedCartItems.push(data);
+
+    //setCartItems(updatedCartItems);
+
+
 
   return (
     <section className="product-card">
@@ -30,7 +36,7 @@ function ProductCard( {data}) {
         
       </div> 
          <button 
-         type="buton" c
+         type="buton"
          className="button__add-card"
          onClick={handleAddCart}
          >

@@ -1,5 +1,5 @@
 import React from "react";
-import './_CartItems.scss';
+import './_CartItem.scss';
 import formatCurrency from '../../utils/formatCurrency'
 
 export default function CartItens({data}) { 
@@ -15,7 +15,7 @@ export default function CartItens({data}) {
       />
       <div className="cart-item-content">
         <h3 className="cart-item-title">{title}</h3>
-        <h3 className="cart-item-price">{formatCurrency(price)}</h3>
+        <h3 className="cart-item-price">{formatCurrency(price, 'BRL')}</h3>
 
         <button 
         type="button"
