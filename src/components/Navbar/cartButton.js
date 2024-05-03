@@ -1,11 +1,17 @@
+import { useContext } from 'react';
 import './_CartButton.scss';
+import AppContext from '../../context/AppContext';
 
 function CartButton() {
-  return (
 
-    <button type="submit" className="cart__icon">
+  const {cartItems} = useContext(AppContext);
+
+  return (
+   
+
+    <button type="button" className="cart__icon">
       <i class="bi bi-cart2"></i>
-      <span>0</span>
+      { cartItems.length> 0 && <span>{cartItems.length}</span>}
     </button>
 
   );
