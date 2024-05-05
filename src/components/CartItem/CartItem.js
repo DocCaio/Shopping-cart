@@ -1,6 +1,6 @@
 import React from "react";
 import './_CartItem.scss';
-import formatCurrency from '../../utils/formatCurrency'
+import formatCurrency from '../../utils/formatCurrency';
 
 export default function CartItens({data}) { 
 
