@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import './_CartItem.scss';
 import formatCurrency from '../../utils/formatCurrency';
+import AppContext from "../../context/AppContext";
 
 export default function CartItens({data}) { 
 
-  const{thumbnail , title , price} = data;
+  const {cartItems  ,setCartItems} = useContext(AppContext);
+
+  const{id ,thumbnail , title , price} = data;
+
+  const handleRemoveItem = () => {
+     const updatedItems = cartItems.filter((item) => item.id != id);
+     setCartItems(updatedItems);
+  }
 
   return (
     <section className="cart-item">
@@ -19,7 +27,8 @@ export default function CartItens({data}) {
 
         <button 
         type="button"
-        className="button_remove-item"        
+        className="button_remove-item"
+        onClick={handleRemoveItem}        
         >
         <i class="bi bi-cart-dash-fill"></i>
         </button>
