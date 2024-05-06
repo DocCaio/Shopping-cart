@@ -4,12 +4,17 @@ import AppContext from '../../context/AppContext';
 
 function CartButton() {
 
-  const {cartItems} = useContext(AppContext);
+  const {cartItems , isCartVisible , setIsCartVisible} = useContext(AppContext);
 
   return (
    
 
-    <button type="button" className="cart__icon">
+    <button
+     type="button" 
+     className="cart__icon"
+     onClick={() => setIsCartVisible(!isCartVisible)}
+     
+     >
       <i class="bi bi-cart2"></i>
       { cartItems.length> 0 && <span>{cartItems.length}</span>}
     </button>
