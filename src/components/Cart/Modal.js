@@ -1,5 +1,6 @@
  import React from "react";
 
+
  const background_style = {  
   position: 'fixed',
   top: '0',
@@ -18,31 +19,49 @@
   top: '50%',
   left: '50%',
   transform:'translate(-50%, -50%)' ,
-  padding:'150px' ,
+  padding:'105px' ,
   backgroundColor:'#fff',
   borderRadius:'10px',
   color:'black'
   
 
  }
+
  
- export default function Modal({isOpen , setModalOpen, children}) { 
+ const close_bnt = { 
+  cursor: 'pointer',
+  color: 'white',
+  backgroundColor: '#1D4ED8',  
+  fontWeight: '500',
+  borderRadius: '0.5rem',
+  fontSize: '1rem',
+  lineHeight: '2rem',
+  padding: ' 0.7rem 2rem',  
+  textAlign: 'center',
+  marginRight: '0.5rem',
+  display: 'inline-flex',
+  alignItems: 'center',
+  border:  'none'  
 
+ }
+ 
+ export default function Modal({ isOpen, setModalOpen, children }) {
   if (isOpen) {
-    return  ( 
-    
-    <div style={background_style} className="modal">
-    
-    <div className="check-circle" style={modal_style}>
-      <div>{children}</div>      
-     
-      <button onClick={setModalOpen}>Fechar</button>  
+    return (
+      <div style={background_style}>
+        <div style={modal_style}>
+         
+          <div>{children}</div>
+          <button style={close_bnt}  onClick={setModalOpen}>Fechar</button>
+        </div>
       </div>
-    </div>
-
     )
-  } 
-  
-return null
-  
+  }
+
+  return null
 }
+
+
+//<div style={{ cursor: 'pointer'}} onClick={setModalOpen}>
+//x
+//</div>

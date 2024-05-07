@@ -20,21 +20,27 @@ function Cart() {
      {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}
         
         </div>
-      <div className='cart-resume'>{formatCurrency(totalPrice , 'BRL')}</div> 
+      <div className='cart-resume'>{formatCurrency(totalPrice , 'BRL')}</div>
+
+      <div>
+
+        <div>
       <button
-      onClick={() => setOpenModal(true)}
-     type="button"
-     className='buyBtn'
+        onClick={() => setOpenModal(true)}
+        type="button"
+        className='buyBtn'
      > 
-     <i class="bi bi-bag-check-fill"></i>
-     Finalizar compra
-    </button>    
+       <i class="bi bi-bag-check-fill"></i>
+       Finalizar compra
+     </button>
+    </div>
+
        <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
-       Compra concluída
-        
+         Compra concluída
+         <i class="bi bi-check-circle-fill"></i>
        </Modal>
-       
-     
+       </div> 
+      
     </section>
 
   );
