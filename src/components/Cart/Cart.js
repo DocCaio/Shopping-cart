@@ -29,7 +29,11 @@ function Cart() {
      <i class="bi bi-bag-check-fill"></i>
      Finalizar compra
     </button>    
-       <Modal isOpen={true}/>
+       <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
+       Compra concluída
+        
+       </Modal>
+       
      
     </section>
 
