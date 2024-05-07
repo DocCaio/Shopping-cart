@@ -5,8 +5,8 @@ export default function Cover() {
     return (
         <section className='cover'>
             <div className='cover__overlay'>
-              <h1>Teste</h1>
-              <span className='slogan'>Where</span>
+              <h1>Shopping</h1>
+              <span className='slogan'>As melhores ofertas é aqui</span>
             </div>
 
         </section>
