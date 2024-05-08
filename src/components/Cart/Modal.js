@@ -19,7 +19,7 @@
   top: '50%',
   left: '50%',
   transform:'translate(-50%, -50%)' ,
-  padding:'105px' ,
+  padding:'100px' ,
   backgroundColor:'#fff',
   borderRadius:'10px',
   color:'black'
