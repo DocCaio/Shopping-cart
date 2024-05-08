@@ -6,8 +6,7 @@ function CartButton() {
 
   const {cartItems , isCartVisible , setIsCartVisible} = useContext(AppContext);
 
-  return (
-   
+  return (   
 
     <button
      type="button" 

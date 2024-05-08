@@ -52,7 +52,7 @@
         <div style={modal_style}>
          
           <div>{children}</div>
-          <button style={close_bnt}  onClick={setModalOpen}>Fechar</button>
+          <button style={close_bnt}  onClick={setModalOpen}>Fechar</button>          
         </div>
       </div>
     )
