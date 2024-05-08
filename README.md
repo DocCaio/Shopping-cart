@@ -10,7 +10,7 @@
 
 - `functionality `:
 - Responsive.
-- Pequise qualquer produto no search e precione a tecla Enter
+- Pesquise qualquer produto no search e  pressione a tecla Enter
 - Adicione  quantos produtos você quiser e depois clique em finalizar compra
   
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20finished&color=GREEN&style=for-the-badge)
