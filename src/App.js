@@ -6,13 +6,14 @@ import Products from './components/Products';
 import Provider from './context/Provider';
 import Cart from './components/Cart/Cart';
 
+
 function App() {
   return  (
     <Provider>
       
     <Navbar/>    
     <Cover/>    
-    <Menu/>
+    <Menu/>   
     <Products/>
     <Cart/>
 

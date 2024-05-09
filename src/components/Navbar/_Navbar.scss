@@ -3,7 +3,9 @@
 .header {
     padding: 1rem 0;
     z-index: 1;
-    width: 100%;
+    width: 99%; 
+    position: fixed;
+    background-color: #EBEBEB;     
 
 }
 
@@ -12,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    
 
 }
 
@@ -61,7 +64,7 @@
 .bi-cart2 {
     background: transparent !important;
     border: 1px solid #99a98f;
-    color: #99a98f;
+    color: #99a98f;  
 }
 
 .cart__icon {
